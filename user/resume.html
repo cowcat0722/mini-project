@@ -51,40 +51,65 @@
                 style="font-size: 30px; border-radius: 5px;">
         </div>
 
-        <div class="card p-2 mb-1">
+        <div class="card mb-2">
             <div>
-                <h5>인적사항</h5>
+                <h5 class="card-header">인적사항</h5>
             </div>
-            <ul>
-                <li>이름 : 홍길동</li>
-                <li>나이 : 만 25세</li>
-                <li>이메일 : ssar@nate.com</li>
-                <li>전화번호 : 010-1111-2222</li>
-                <li>주소 : 부산광역시 기장군 정관읍 정관3로24 그린컴퓨터아카데미 3반</li>
-            </ul>
+
+            <div class="card-body">
+                <div>
+                    <table class="table table-bordered">
+                        <tbody style="font-size: 10px;">
+                            <tr>
+                                <th>이름</th>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <th>나이</th>
+                                <td>만 25세</td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>ssar@nate.com</td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>010-1111-2222</td>
+                            </tr>
+                            <tr>
+                                <th>주소</th>
+                                <td>부산광역시 기장군 정관읍 정관3로24 그린컴퓨터아카데미 3반</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
 
-        <div class="card p-2 mb-1">
+        <div class="card mb-2">
             <div>
-                <h5>희망직무</h5>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" value="something">
-                    <div>프론트엔드</div>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" value="something">
-                    <div>백엔드</div>
+                <h5 class="card-header">희망직무</h5>
+                <div class="container">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" value="something">
+                        <div>프론트엔드</div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" value="something">
+                        <div>백엔드</div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="card p-2 mb-1">
+        <div class="card mb-2">
             <div>
-                <h5>스킬</h5>
+                <h5 class="card-header">스킬</h5>
             </div>
 
-            <div class="d-flex">
+            <div class="d-flex row container">
 
                 <div class="col-sm-2">
                     <div class="form-check">
@@ -122,13 +147,14 @@
                         <div>JSP</div>
                     </div>
                 </div>
+
             </div>
         </div>
 
-        <div class="card p-2 mb-1">
+        <div class="card mb-2">
             <div>
-                <h5>학력</h5>
-                <div class="d-flex">
+                <h5 class="card-header">학력</h5>
+                <div class="d-flex m-2">
                     <div class="col-sm-4">
                         <select class="form-select">
                             <option>학력 선택</option>
@@ -155,10 +181,10 @@
 
         </div>
 
-        <div class="card p-2 mb-1">
+        <div class="card mb-2">
             <div>
-                <h5>경력</h5>
-                <div class="col-sm-4">
+                <h5 class="card-header">경력</h5>
+                <div class="col-sm-4 m-2">
                     <select class="form-select">
                         <option value="">선택</option>
                         <option value="1">신입</option>
@@ -172,32 +198,29 @@
 
         </div>
 
-        <div class="card p-2 mb-1">
-            <div class="d-flex justify-content-between">
+        <div class="card mb-2">
+            <div class="d-flex justify-content-between card-header">
                 <h5>자격증</h5>
-                <button class=" btn btn-primary btn-sm" id="btnLicense">추가</button>
+                <button class=" btn btn-primary btn-sm " id="btnLicense">추가</button>
             </div>
-            <div id="licenseList">
+            <div class="m-2" id="licenseList">
 
             </div>
         </div>
 
-        <div class="card p-2 mb-1">
+        <div class="card mb-2">
             <div>
-                <h5>자기소개서</h5>
+                <h5 class="card-header">자기소개서</h5>
                 <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
             </div>
 
         </div>
 
         <div class="d-flex justify-content-center">
-            <button class=" btn btn-primary btn-lg">임시저장</button>
-            <div style="margin: 0 5px;"></div>
             <button class=" btn btn-primary btn-lg">작성완료</button>
         </div>
-    </div>
 
-    <br>
+        <br>
 
 </body>
 
